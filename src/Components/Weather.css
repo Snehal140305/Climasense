@@ -1,0 +1,178 @@
+.weather{
+  width:100%;
+  max-width:380px;
+  min-height:90vh;
+  padding:45px 35px;
+  border-radius:22px;
+  background:linear-gradient(135deg,#3a1c71,#d76d77,#ffaf7b);
+  box-shadow:0 20px 45px rgba(0,0,0,0.35);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+}
+
+
+
+/* SEARCH BAR */
+.search-bar{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.search-bar input{
+    height:48px;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    padding-left:22px;
+    color:#333;
+    background:#ffffff;
+    font-size:16px;
+    width:200px;
+}
+
+.search-bar img{
+    width:46px;
+    padding:12px;
+    border-radius:50%;
+    background:#ffffff;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.search-bar img:hover{
+    transform:scale(1.1);
+}
+
+/* MAIN ICON */
+.weather-icon{
+    width:140px;
+    margin:25px 0;
+}
+
+/* TEMPERATURE */
+.temperature{
+    color:#ffffff;
+    font-size:76px;
+    text-shadow:0 0 15px rgba(255,255,255,0.4);
+    line-height:1;
+}
+
+.location{
+    color:#ffffff;
+    font-size:32px;
+}
+
+/* SEARCH HISTORY */
+.history span{
+    background:rgba(0,0,0,0.25);
+    padding:6px 14px;
+    border-radius:18px;
+    margin:4px;
+    font-size:13px;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.history span:hover{
+    background:rgba(0,0,0,0.4);
+}
+
+/* UNIT BUTTON */
+.unit-btn{
+    margin:8px auto;
+    padding:5px 14px;
+    border:none;
+    border-radius:6px;
+    background:rgba(0,0,0,0.35);
+    color:#ffffff;
+    cursor:pointer;
+}
+
+/* LOADING */
+.loading{
+    color:#ffffff;
+    animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+    0%{opacity:.4}
+    50%{opacity:1}
+    100%{opacity:.4}
+}
+
+/* ERROR */
+.error{
+    color:#ffb3b3;
+    background:rgba(0,0,0,0.25);
+    padding:6px 10px;
+    border-radius:8px;
+    margin:6px 0;
+}
+
+.weather-data{
+    width:100%;
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    color:#ffffff;
+}
+
+.weather-data .col{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-size:18px;
+    text-align:center;
+}
+
+.weather-data .col div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.weather-data .col span{
+    font-size:13px;
+}
+
+.weather-data .col img{
+    width:22px;
+    filter:brightness(0) invert(1);
+}
+/* SMART WEATHER ADVICE */
+.advice{
+    color:#ffffff;
+    font-size:14px;
+    margin:8px 0 4px 0;
+    text-align:center;
+    background:rgba(0,0,0,0.25);
+    padding:6px 10px;
+    border-radius:8px;
+}
+
+/* MINI TEMPERATURE GRAPH */
+.graph{
+    display:flex;
+    align-items:flex-end;
+    gap:6px;
+    height:70px;
+    margin:15px 0;
+}
+
+.bar{
+    width:8px;
+    background:rgba(255,255,255,0.8);
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.bar:hover{
+    background:#ffffff;
+}
+
+
